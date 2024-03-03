@@ -24,5 +24,5 @@ Esse projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ## Demonstração
 
-![](https://github.com/vlopess/Lechat/blob/master/images/img1.png)
-![](https://github.com/vlopess/Lechat/blob/master/images/img2.png)
+![](https://github.com/vlopess/LeChat-in-Java/blob/master/images/img1.png)
+![](https://github.com/vlopess/LeChat-in-Java/blob/master/images/img2.png)
