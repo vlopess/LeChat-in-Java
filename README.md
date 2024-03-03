@@ -23,5 +23,4 @@ Esse projeto foi desenvolvido utilizando as seguintes tecnologias:
 ![](https://skillicons.dev/icons?i=java)
 
 ## Demonstração
-
-![](https://github.com/vlopess/Lechat/blob/master/images/img1.png)
+![](https://github.com/vlopess/LeChat-in-Java/blob/main/images/img1.png)
