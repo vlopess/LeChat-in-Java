@@ -22,6 +22,7 @@ public class Request implements Runnable {
 	private void setUsername() throws IOException {
 		String name = this.inOutputSocket.getNextLine();
 		this.username = name;
+    System.out.println("Username: " + name + " in!");
 		sendMessageNewClient();
 	}
 	
@@ -34,14 +35,17 @@ public class Request implements Runnable {
 		this.server.sendMessegeFrom(cliente, stringBuffer.toString());
 	}
 
-	public void processRequest() throws IOException {
-		while(true) {
-			String message = this.inOutputSocket.getNextLine();			
-			this.server.sendMessegeFrom(cliente, username + " said: " + message);
-		}		
+	public void processRequest() throws IOException{
+      try {
+        while(true) {
+          String message = this.inOutputSocket.getNextLine();			
+          this.server.sendMessegeFrom(cliente, username + " said: " + message);
+        }
+      }	catch (IOException e) {
+        this.server.removeClient(cliente);
+      }
 	}
-
-
+  
 	@Override
 	public void run() {
 		try {
