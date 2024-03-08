@@ -10,7 +10,7 @@ public class Server {
 		while(true) {
 			Socket client = server.accept();
 			server.addClient(client);
-			//System.out.println(client.getInetAddress());			
+			System.out.println("A new client was connected!");			
 			Request request = new Request(client, server);			
 			Thread t = new Thread(request); 
 			t.start();
