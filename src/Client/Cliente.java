@@ -8,7 +8,7 @@ public class Cliente{
 	
 	public void run()  throws UnknownHostException, IOException { 
 		int PORT = 8080;
-		String ADDR = "192.168.10.17";
+		String ADDR = "localhost";
 		Socket client = new Socket(ADDR, PORT);
 		showWelcome();		
 		InOutput inOutput = new InOutput(client);
